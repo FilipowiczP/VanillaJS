@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Vanilla Js</title>
+
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/index.min.css" />
+  </head>
+
+  <body>
+    <from class="from">
+      <label class="from__label">
+        Title:
+        <input type="text" class="from__title from__input" />
+      </label>
+
+      <label class="from__label">
+        Author:
+        <input type="text" class="from__author from__input" />
+      </label>
+
+      <div>
+        <label>Category:</label>
+        <select class="from__category">
+          <option disabled selected hidden>
+            -Choice-
+          </option>
+          <option value="Thriller">Thriller</option>
+          <option value="Sci-fi">Sci-fi</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Poetry">Poetry</option>
+          <option value="Drama">Drama</option>
+          <option value="Science">Science</option>
+        </select>
+
+        <label>Priority:</label>
+        <select class="from__priority">
+          <option disabled selected hidden>
+            -Choice-
+          </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <button class="from__submit button">Add</button>
+    </from>
+
+    <div id="tableToPrint">
+      <table class="table">
+        <thead class="table__header">
+          <tr>
+            <th class="table__header-area">
+              Title
+            </th>
+            <th class="table__header-area">
+              Author
+            </th>
+            <th class="table__header-area">
+              Category
+            </th>
+            <th class="table__header-area">
+              Priority
+            </th>
+            <th class="table__header-area">
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody class="table__body"></tbody>
+      </table>
+    </div>
+    <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+    <div class="settings">
+      <button class="print button">Print</button>
+      <button class="load button">Load</button>
+      <button class="save button">Save</button>
+      <form>
+        <label>
+          New category:
+          <input type="text" class="newCategoryName" />
+        </label>
+        <button class="button newCategory">Add</button>
+      </form>
+    </div>
+  </body>
+
+  <!-- Main js file -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+</html>
